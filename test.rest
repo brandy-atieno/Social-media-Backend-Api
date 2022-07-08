@@ -1,0 +1,70 @@
+GET http://localhost:5001/user/users
+###
+POST  http://localhost:5001/user/register
+Content-Type: application/json
+
+{
+  "USER_ID":12,
+  "USERNAME":"WmeuplojYHNJty",
+  "FIRSTNAME":"LEnjhNDJpp",
+  "LASTNAME":"htgMFKpp",
+  "EMAIL":"RTFCUnmjbhhmIgtgU70@merriam-webster.com",
+  "PASSWORD":"ue45BBHDJedfvgLnl",
+   "GENDER":"Female"
+   
+
+
+}
+###
+POST http://localhost:5001/user/signin
+Content-Type: application/json
+
+{
+  
+ "EMAIL": "rfvIKJHbyh@gmail.com",
+  "PASSWORD": "Uasedfvgh"   
+} 
+###
+POST http://localhost:5001/posts/posts
+Content-Type: application/json
+
+{
+  "POST_ID":37,
+  "DESCRIPTION":"FIRST POST",
+  "POSTED":"2022-04-01",
+  "USERID":3
+  
+}
+###
+POST http://localhost:5001/posts/comments
+Content-Type: application/json
+
+{
+  "COMMENT_ID":11,
+  "DESCRIPTION":"FIRST POST",
+  "POSTED":"2022-03-01",
+  "USERID":6,
+  "POSTID":3
+
+  
+  
+}
+###
+POST http://localhost:5001/posts/replies
+Content-Type: application/json
+
+{
+  "REPLY_ID":10,
+  "DESCRIPTION":"FIRST POST",
+  "POSTED":"2022-05-01",
+  "USERID":3,
+  "COMMENTID":3
+  
+  
+}
+###
+
+
+
+
+
